@@ -1,25 +1,21 @@
 #include "main.h"
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+*_puts - prints a string
+*@str: A pointer to an int that will be changed
+*
+*Return: void which means our answer is correct
+*/
 
-void print_rev(char *s)
+void _puts(char *str)
 {
-int i;
+char *c;
+int m;
 
-i = 0;
-while (s[i] != '\0')
+c = str;
+
+for (m = 0; c[m]; m++)
 {
-i++;
+_putchar (c[m]);
 }
-
-for (i = i - 1 ; i >= 0; i--)
-{
-_putchar (s[i]);
-}
-
-_putchar ('\n');
+_putchar('\n');
 }
