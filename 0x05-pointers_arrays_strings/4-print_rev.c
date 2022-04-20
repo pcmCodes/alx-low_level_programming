@@ -1,21 +1,25 @@
 #include "main.h"
 /**
-*_puts - prints a string
-*@str: A pointer to an int that will be changed
-*
-*Return: void which means our answer is correct
-*/
+ * print_rev - prints a string in reverse order
+ *@s: A pointer to an int that will be changed
+ *
+ *Return: void which means our answer is correct
+ */
 
-void _puts(char *str)
+void print_rev(char *s)
 {
-char *c;
-int m;
+int i;
 
-c = str;
-
-for (m = 0; c[m]; m++)
+i = 0;
+while (s[i] != '\0')
 {
-_putchar (c[m]);
+i++;
 }
-_putchar('\n');
+
+for (i = i - 1 ; i >= 0; i--)
+{
+_putchar (s[i]);
+}
+
+_putchar ('\n');
 }
