@@ -1,9 +1,9 @@
 #include "main.h"
-
 /**
- * main - check the code
+ * rev_string - prints a reverse string
+ *@s: A pointer to an int that will be changed
  *
- * Return: Always 0.
+ *Return: void
  */
 
 void rev_string(char *s)
