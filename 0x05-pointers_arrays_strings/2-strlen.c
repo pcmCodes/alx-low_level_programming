@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code
+ *_strlen -length of a string
+ *@s: A pointer to an int that will be changed/updated
  *
- * Return: Always 0.
+ *Return: void that means our answer is correct
  */
 
 int _strlen(char *s)
