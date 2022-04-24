@@ -4,7 +4,7 @@
  * concatenating two strings
  *
  */
-
+ {
 char *_strcat(char *dest, char *src);
 {
 	int dently = 0;
@@ -21,5 +21,6 @@ char *_strcat(char *dest, char *src);
 
 	dest[dently] = '\0';
 	return (dest);
+	}	
 }
 
