@@ -13,13 +13,11 @@ int _strcmp(char *s1, char *s2)
 
 	while ((*(s1 + a) != '\0') & (*(s2 + a) != '\0'))
 	{
-	if ((s1 + a) != (s2 + a))
+	if (*(s1 + a) != *(s2 + a))
 	res = 1;
 	break;
 	a++;
 	}
 	if (res == 0)
 	return (res);
-	else
-	return (9);
 }
