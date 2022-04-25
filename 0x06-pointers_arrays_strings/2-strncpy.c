@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _strncpy - coping a string
  * @dest: end
@@ -9,12 +9,15 @@ include "main.h"
 
 char *_strncpy(char *dest, char *src, int n);
 {
-	int i;
+	int a;
 
-	for (i = 0; i < n && src[i] != '\0'; i++) 
-		dest[i] = src[i];
-	for ( ; i < n; i++)
-		dest[i] = '\0';
+	for (a = 0; a < n && dest[a] != '\0'; a++)
+	{
+		src[a] = dest[a];
+	}
+
+	for ( ; a < n; a++)
+		src[a] = '\0';
 
 	return (dest);
 }
