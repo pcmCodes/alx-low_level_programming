@@ -6,21 +6,20 @@
  * Return: 0 or 9
  */
 
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
-		int a = 0;
-		int res = 0;
+	int a = 0;
+	int res = 0;
 
-		while (((s1 + a) == '\0') && ((s2 + a) == '\0'))
+	while ((*(s1 + a) != '\0') & (*(s2 + a) != '\0'))
 	{
-		if (s1 + a) != (s2 + a)
-			res = 1;
-			break;
-		a++;
+	if ((s1 + a) != (s2 + a))
+	res = 1;
+	break;
+	a++;
 	}
-
-		if (res == 0)
-		return (res);
-		else
-		return (9);
+	if (res == 0)
+	return (res);
+	else
+	return (9);
 }
