@@ -6,7 +6,7 @@
  * Return: reversed content of an array of integers
  */
 
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int x = 0;
 	int y = x + 1;
